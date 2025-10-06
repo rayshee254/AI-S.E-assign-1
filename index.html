@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LearnHub Mini</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <h1>LearnHub Mini</h1>
-      <div id="auth-section">
-        <button onclick="showAuthModal('login')">Login</button>
-        <button onclick="showAuthModal('signup')">Sign Up</button>
+  <head>
+    <title>LearnHub - Online Learning Platform</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">LearnHub</h1>
+        <nav>
+          <a href="/" class="active">Courses</a>
+        </nav>
       </div>
-    </nav>
-  </header>
+    </header>
 
-  <main id="main-content">
-    <!-- Content injected by JavaScript -->
-  </main>
+    <main class="container">
+      <section class="hero">
+        <h2>Start Learning Today</h2>
+        <p>Explore our curated selection of courses and advance your skills</p>
+      </section>
 
-  <!-- Auth Modal -->
-  <div id="auth-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeAuthModal()">&times;</span>
-      <h2 id="modal-title">Login</h2>
-      <form id="auth-form" onsubmit="handleAuthSubmit(event)">
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <button type="submit" class="button button-primary">Continue</button>
-      </form>
-    </div>
-  </div>
+      <section class="courses-grid">
+        <div class="course-card">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web Development Fundamentals" />
+          </div>
+          <div class="course-content">
+            <span class="course-level">Beginner</span>
+            <h3>Web Development Fundamentals</h3>
+            <p class="course-instructor">By Sarah Johnson</p>
+            <p class="course-description">Learn the basics of HTML, CSS, and JavaScript to build modern websites from scratch.</p>
+            <div class="course-meta">
+              <span class="course-duration">📚 6 weeks</span>
+            </div>
+            <a href="page2.html" class="btn btn-primary">View Course</a>
+          </div>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div class="course-card">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Advanced React Patterns" />
+          </div>
+          <div class="course-content">
+            <span class="course-level">Advanced</span>
+            <h3>Advanced React Patterns</h3>
+            <p class="course-instructor">By Michael Chen</p>
+            <p class="course-description">Master advanced React concepts including hooks, context, performance optimization, and design patterns.</p>
+            <div class="course-meta">
+              <span class="course-duration">📚 4 weeks</span>
+            </div>
+            <a href="page2.html" class="btn btn-primary">View Course</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-image">
+            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Python for Data Science" />
+          </div>
+          <div class="course-content">
+            <span class="course-level">Intermediate</span>
+            <h3>Python for Data Science</h3>
+            <p class="course-instructor">By Dr. Emily Rodriguez</p>
+            <p class="course-description">Explore data analysis and visualization using Python, pandas, and popular data science libraries.</p>
+            <div class="course-meta">
+              <span class="course-duration">📚 8 weeks</span>
+            </div>
+            <a href="page2.html" class="btn btn-primary">View Course</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 LearnHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

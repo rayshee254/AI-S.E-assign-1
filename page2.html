@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Course Details - LearnHub</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">LearnHub</h1>
+        <nav>
+          <a href="/">Courses</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="course-detail">
+        <div class="course-header">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web Development Fundamentals" class="course-detail-image" />
+          <div class="course-header-content">
+            <span class="course-level">Beginner</span>
+            <h2>Web Development Fundamentals</h2>
+            <p class="course-instructor">By Sarah Johnson</p>
+            <p class="course-description">Learn the basics of HTML, CSS, and JavaScript to build modern websites from scratch.</p>
+            <div class="course-meta">
+              <span class="course-duration">📚 Duration: 6 weeks</span>
+              <span class="course-lessons">📖 4 lessons</span>
+            </div>
+            <button class="btn btn-success" id="completeBtn">Mark as Completed</button>
+            <div class="completion-status completed" id="completedMsg" style="display: none;">
+              ✓ You have completed this course
+            </div>
+          </div>
+        </div>
+
+        <div class="lessons-section">
+          <h3>Course Lessons</h3>
+          <div class="lessons-list">
+            <div class="lesson-item">
+              <div class="lesson-number">1</div>
+              <div class="lesson-content">
+                <h4>Introduction to HTML</h4>
+                <p>Learn the structure and syntax of HTML5, including semantic elements.</p>
+              </div>
+            </div>
+
+            <div class="lesson-item">
+              <div class="lesson-number">2</div>
+              <div class="lesson-content">
+                <h4>Styling with CSS</h4>
+                <p>Master CSS fundamentals including selectors, box model, and flexbox.</p>
+              </div>
+            </div>
+
+            <div class="lesson-item">
+              <div class="lesson-number">3</div>
+              <div class="lesson-content">
+                <h4>JavaScript Basics</h4>
+                <p>Understand variables, functions, and control flow in JavaScript.</p>
+              </div>
+            </div>
+
+            <div class="lesson-item">
+              <div class="lesson-number">4</div>
+              <div class="lesson-content">
+                <h4>DOM Manipulation</h4>
+                <p>Learn how to interact with and modify web pages using JavaScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 LearnHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
