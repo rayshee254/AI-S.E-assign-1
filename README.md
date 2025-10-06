@@ -2,7 +2,7 @@
 
 ## 🚀 Live Deployment
 [![Bolt New Static Starter](https://img.shields.io/badge/Bolt-Static_Starter-blue)](https://bolt.new)  
-**Live Demo**: [bolt.new/~/stackblitz-starters-plx21jmw](https://bolt.new/~/stackblitz-starters-plx21jmw)
+**Live Demo**: [https://static-starter-au73.bolt.host]
 
 ## 🎯 Objective  
 A lightweight e-learning platform prototype demonstrating core concepts from VibeCoding Week 1, built with HTML/CSS/JS + Bolt New framework
